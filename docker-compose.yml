@@ -1,0 +1,17 @@
+services:
+  mihan_web:
+    image: nginx:alpine
+    container_name: mihan_web
+    restart: unless-stopped
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    # Hanya untuk tes lokal di server; akses publik lewat Nginx Proxy Manager
+    ports:
+      - "127.0.0.1:8090:80"
+    networks:
+      - nginx-proxy-manager-network
+
+networks:
+  nginx-proxy-manager-network:
+    external: true
