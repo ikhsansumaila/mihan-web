@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       var body = "Nama: " + d.get("nama") + "\nEmail: " + d.get("email") +
         "\nLayanan: " + d.get("layanan") + "\n\n" + d.get("pesan");
       // Ganti alamat email di bawah dengan email perusahaan
-      window.location.href = "mailto:halo@mihan.web.id?subject=" +
+      window.location.href = "mailto:info@mihan.web.id?subject=" +
         encodeURIComponent("Konsultasi dari website") + "&body=" + encodeURIComponent(body);
     });
   }
