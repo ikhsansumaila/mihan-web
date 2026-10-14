@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mihan - Software House & Solusi IT</title>
   <meta name="description"
-    content="Mihan adalah software house yang membantu bisnis membangun website, aplikasi mobile, dan sistem informasi.">
+    content="Mihan adalah software house di Tangerang yang membangun website, aplikasi mobile, dan sistem informasi untuk bisnis dan instansi.">
   <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563eb'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>M</text></svg>">
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231f4ea3'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>M</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+  <script>document.documentElement.classList.add("js")</script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
   <!-- ===== HEADER (sama di semua halaman) ===== -->
   <header class="header">
     <div class="container nav">
-      <a href="index.html" class="logo">Mihan<span>.</span></a>
+      <a href="index.html" class="logo"><img src="assets/mihansoftwarehouse_transparent.png" alt="Mihan Software House" width="132" height="34"></a>
       <button class="nav-toggle" aria-label="Buka menu"
         aria-expanded="false"><span></span><span></span><span></span></button>
       <ul class="nav-links">
@@ -36,104 +37,172 @@
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="container hero-grid">
-      <div>
-        <span class="badge">Mihan Jaya Solusindo</span>
-        <h1>Wujudkan ide digital Anda bersama <span class="grad">Mihan Jaya Solusindo</span></h1>
-        <p>Kami membangun website, aplikasi mobile, dan sistem informasi yang andal, aman, dan siap berkembang bersama
-          bisnis Anda.</p>
-        <div class="hero-actions">
-          <a href="kontak.html" class="btn btn-primary">Konsultasi Gratis</a>
-          <a href="layanan.html" class="btn btn-outline">Lihat Layanan</a>
+      <div data-reveal-group="0.1">
+        <span class="eyebrow line" data-reveal>Mihan Jaya Solusindo</span>
+        <h1 data-reveal>Software yang <em>dipakai setiap hari</em>, dibangun untuk bisnis Anda.</h1>
+        <p class="hero-lead" data-reveal>Kami merancang dan membangun website, aplikasi mobile, dan sistem informasi, dari
+          dashboard instansi pemerintah sampai aplikasi absensi tim lapangan.</p>
+        <div class="hero-actions" data-reveal>
+          <a href="kontak.html" class="btn btn-primary">Konsultasi Gratis
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <a href="portofolio.html" class="btn btn-ghost">Lihat Portofolio</a>
         </div>
       </div>
-      <div class="hero-card">
-        <div class="dots"><i></i><i></i><i></i></div>
-        <pre><span class="c">// proyek-anda.js</span>
-<span class="k">const</span> mitra = <span class="s">"Mihan"</span>;
-<span class="k">const</span> hasil = [
-  <span class="s">"Website cepat"</span>,
-  <span class="s">"Aplikasi mobile"</span>,
-  <span class="s">"Sistem terintegrasi"</span>,
-];
-<span class="k">await</span> bangun(ideAnda, mitra);
-<span class="c">// Siap diluncurkan</span></pre>
+
+      <div class="hero-visual" data-reveal="scale" style="--d:.2s">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>sipp-intelligence</span></div>
+          <div class="browser-screen">
+            <img class="active" src="assets/portfolio/SIPP%20Dashboard.png" alt="Dashboard SIPP Intelligence buatan Mihan" width="1600" height="960">
+          </div>
+        </div>
+        <div class="hero-phone" data-parallax="-0.08">
+          <img src="assets/portfolio/ABSENKU%20MOBILE%20APPS.jpeg" alt="Aplikasi mobile AbsenKu" loading="lazy">
+        </div>
+        <div class="hero-mini" data-parallax="0.06">
+          <img src="assets/portfolio/PLTS%20MONITORING%20DASHBOARD.png" alt="Dashboard PLTS Monitoring" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== STATISTIK (angka dummy) ===== -->
-  <!-- <section class="section" style="padding-top:40px;padding-bottom:40px">
-  <div class="container grid grid-4 stats">
-    <div><strong>50+</strong><span>Proyek selesai</span></div>
-    <div><strong>30+</strong><span>Klien puas</span></div>
-    <div><strong>5+</strong><span>Tahun pengalaman</span></div>
-    <div><strong>24/7</strong><span>Dukungan teknis</span></div>
-  </div>
-</section> -->
-
-  <!-- ===== LAYANAN SINGKAT ===== -->
-  <section class="section soft">
+  <!-- ===== SEKTOR KLIEN ===== -->
+  <section class="sectors">
     <div class="container">
-      <div class="section-title">
-        <h2>Layanan Kami</h2>
-        <p>Solusi teknologi menyeluruh, dari perencanaan hingga pemeliharaan.</p>
+      <p data-reveal="fade">Sistem yang kami bangun dipakai di berbagai sektor</p>
+      <ul data-reveal-group="0.08">
+        <li data-reveal>Pemerintahan<span>SIPP Intelligence</span></li>
+        <li data-reveal>HR &amp; Konstruksi<span>AbsenKu</span></li>
+        <li data-reveal>Energi Terbarukan<span>PLTS Monitoring</span></li>
+        <li data-reveal>Pernikahan<span>Kekkon</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== LAYANAN ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-reveal>Layanan</span>
+          <h2 data-reveal>Dari perencanaan sampai pemeliharaan, dikerjakan satu tim.</h2>
+        </div>
+        <a href="layanan.html" class="text-link" data-reveal>Semua layanan
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="grid grid-3">
-        <div class="card">
-          <div class="icon">&#9998;</div>
+      <div class="grid grid-3" data-reveal-group="0.1">
+        <div class="card service" data-reveal>
+          <div class="service-top">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <span class="num">01</span>
+          </div>
           <h3>Pengembangan Website</h3>
           <p>Company profile, toko online, hingga aplikasi web kustom yang cepat dan responsif.</p>
+          <ul class="service-tags"><li>Web App</li><li>Landing Page</li><li>CMS</li></ul>
         </div>
-        <div class="card">
-          <div class="icon">&#9743;</div>
+        <div class="card service" data-reveal>
+          <div class="service-top">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+            <span class="num">02</span>
+          </div>
           <h3>Aplikasi Mobile</h3>
-          <p>Aplikasi Android dan iOS dengan pengalaman pengguna yang nyaman.</p>
+          <p>Aplikasi Android dan iOS dengan pengalaman pengguna yang nyaman, siap rilis ke store.</p>
+          <ul class="service-tags"><li>Android</li><li>iOS</li><li>Flutter</li></ul>
         </div>
-        <div class="card">
-          <div class="icon">&#9881;</div>
+        <div class="card service" data-reveal>
+          <div class="service-top">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+            <span class="num">03</span>
+          </div>
           <h3>Sistem Informasi</h3>
-          <p>E-Commerce, ERP, POS, dan dashboard internal untuk efisiensi operasional bisnis.</p>
+          <p>ERP, HRIS, POS, dan dashboard internal untuk efisiensi operasional bisnis.</p>
+          <ul class="service-tags"><li>ERP</li><li>HRIS</li><li>Dashboard</li></ul>
         </div>
       </div>
-      <p style="text-align:center;margin-top:32px"><a href="layanan.html" class="btn btn-outline">Semua Layanan</a></p>
     </div>
   </section>
 
-  <!-- ===== KENAPA KAMI ===== -->
-  <section class="section">
-    <div class="container split">
-      <div class="visual">&lt;/&gt;</div>
-      <div>
-        <h2>Kenapa memilih Mihan?</h2>
-        <p>Kami bekerja secara transparan dengan proses yang jelas, sehingga Anda selalu tahu perkembangan proyek.</p>
-        <div class="grid grid-2" style="margin-top:20px">
-          <div>
-            <h3 style="font-size:1rem">Tim berpengalaman</h3>
-            <p>Developer dan desainer yang terbiasa menangani proyek beragam.</p>
-          </div>
-          <div>
-            <h3 style="font-size:1rem">Harga transparan</h3>
-            <p>Estimasi biaya jelas di awal, tanpa biaya tersembunyi.</p>
-          </div>
-          <div>
-            <h3 style="font-size:1rem">Tepat waktu</h3>
-            <p>Jadwal kerja terukur dengan laporan progres rutin.</p>
-          </div>
-          <div>
-            <h3 style="font-size:1rem">Dukungan purna jual</h3>
-            <p>Pemeliharaan dan perbaikan setelah proyek selesai.</p>
-          </div>
+  <!-- ===== PORTOFOLIO UNGGULAN ===== -->
+  <section class="section soft">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow" data-reveal>Portofolio</span>
+          <h2 data-reveal>Beberapa sistem yang sudah berjalan.</h2>
         </div>
+        <a href="portofolio.html" class="text-link" data-reveal>Lihat detail proyek
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
+      <div class="work-grid">
+        <a class="work-card" href="portofolio.html#sipp" data-reveal>
+          <div class="work-thumb"><img src="assets/portfolio/SIPP%20Dashboard.png" alt="SIPP Intelligence" loading="lazy"></div>
+          <div class="work-meta"><span>Pemerintahan</span><span>Web App</span></div>
+          <h3>SIPP Intelligence <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+          <p>Pemantauan arus pelintasan Indonesia secara live, lengkap dengan inspeksi penumpang dan skor risiko.</p>
+        </a>
+        <a class="work-card" href="portofolio.html#absenku" data-reveal style="--d:.12s">
+          <div class="work-thumb"><img src="assets/portfolio/ABSENKU%20HRIS.jpeg" alt="AbsenKu HRIS" loading="lazy"></div>
+          <div class="work-meta"><span>HR &amp; Konstruksi</span><span>Web + Mobile</span></div>
+          <h3>AbsenKu <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+          <p>HRIS, ERP proyek, dan aplikasi mobile untuk absensi, payroll, dan operasional tim lapangan.</p>
+        </a>
+        <a class="work-card" href="portofolio.html#plts" data-reveal>
+          <div class="work-thumb"><img src="assets/portfolio/PLTS%20MONITORING%20DASHBOARD.png" alt="PLTS Monitoring Command Center" loading="lazy"></div>
+          <div class="work-meta"><span>Energi</span><span>IoT Dashboard</span></div>
+          <h3>PLTS Monitoring <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+          <p>Pusat kendali real-time untuk pembangkit listrik tenaga surya: produksi, baterai, dan alarm.</p>
+        </a>
+        <a class="work-card" href="portofolio.html#kekkon" data-reveal style="--d:.12s">
+          <div class="work-thumb"><img class="center" src="assets/portfolio/KEKKON%20LANDING.jpg" alt="Kekkon" loading="lazy"></div>
+          <div class="work-meta"><span>Pernikahan</span><span>Platform Gratis</span></div>
+          <h3>Kekkon <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></h3>
+          <p>Undangan pernikahan digital gratis: editor template, kelola tamu, dan bagikan dengan sekali klik.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROSES KERJA ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <span class="eyebrow" data-reveal>Cara kami bekerja</span>
+        <h2 data-reveal>Proses yang jelas, progres yang selalu terlihat.</h2>
+      </div>
+      <ol class="steps" data-reveal-group="0.12">
+        <li data-reveal>
+          <b>01</b>
+          <h3>Diskusi kebutuhan</h3>
+          <p>Kami pelajari alur bisnis Anda, lalu memberi estimasi biaya dan jadwal yang jelas di awal.</p>
+        </li>
+        <li data-reveal>
+          <b>02</b>
+          <h3>Desain</h3>
+          <p>Alur dan tampilan dirancang lebih dulu, sehingga Anda bisa mencoba sebelum mulai dibangun.</p>
+        </li>
+        <li data-reveal>
+          <b>03</b>
+          <h3>Pengembangan</h3>
+          <p>Dibangun bertahap dengan demo dan laporan progres rutin di setiap sprint.</p>
+        </li>
+        <li data-reveal>
+          <b>04</b>
+          <h3>Rilis &amp; dukungan</h3>
+          <p>Peluncuran, pelatihan pengguna, lalu pemeliharaan dan perbaikan setelah proyek selesai.</p>
+        </li>
+      </ol>
     </div>
   </section>
 
   <!-- ===== CTA ===== -->
-  <section class="container">
-    <div class="cta">
-      <h2>Punya ide proyek?</h2>
-      <p>Ceritakan kebutuhan Anda, kami bantu rancang solusinya.</p>
-      <a href="kontak.html" class="btn">Hubungi Kami</a>
+  <section class="container cta-wrap">
+    <div class="cta" data-reveal>
+      <div>
+        <h2>Punya ide proyek?</h2>
+        <p>Ceritakan kebutuhan Anda. Konsultasi awal gratis, dan kami balas dalam 1x24 jam pada hari kerja.</p>
+      </div>
+      <a href="kontak.html" class="btn">Hubungi Kami
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </section>
 
@@ -142,8 +211,8 @@
     <div class="container">
       <div class="footer-grid">
         <div>
-          <a href="index.html" class="logo">Mihan<span>.</span></a>
-          <p style="margin-top:12px;max-width:340px">Software house yang membantu bisnis bertumbuh lewat teknologi.</p>
+          <a href="index.html" class="logo"><img src="assets/mihansoftwarehouse_transparent.png" alt="Mihan Software House" width="140" height="36" loading="lazy"></a>
+          <p class="footer-about">Software house yang membantu bisnis bertumbuh lewat teknologi.</p>
         </div>
         <div>
           <h4>Menu</h4>
@@ -158,16 +227,20 @@
         <div>
           <h4>Kontak</h4>
           <ul>
-            <li>info@mihan.web.id</li>
-            <li>+62 821-2294-3847</li>
+            <li><a href="mailto:info@mihan.web.id">info@mihan.web.id</a></li>
+            <li><a href="https://wa.me/6282122943847">+62 821-2294-3847</a></li>
             <li>Tangerang, Indonesia</li>
           </ul>
         </div>
       </div>
-      <div class="footer-bottom">&copy; <span id="year">2026</span> Mihan. Semua hak dilindungi.</div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Mihan. Semua hak dilindungi.</span>
+        <a href="privasi.html">Kebijakan Privasi</a>
+      </div>
     </div>
   </footer>
 
+  <script src="assets/vendor/lenis.min.js"></script>
   <script src="assets/main.js"></script>
 </body>
 
